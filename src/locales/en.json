@@ -1,0 +1,54 @@
+{
+  "en":
+    {
+      "Header": {
+        "Projects": "Projects",
+        "AboutMe": "About Me",
+        "Contact": "Contacts"
+      },
+      "Title": "Full-Stack Developer",
+      "ParrafInit1": "Computer Science student and passionate about web development",
+      "ParrafInit2": ". Specialized in building modern, responsive, intuitive and elegant web applications.",
+      "ButtonInit": "My Projects",
+      "MyProjects": "My Projects",
+      "Projects": {
+        "1": {
+          "Title": "Inventory Management System",
+          "Description": "Web system to manage products, prices and stocks. With sales analytics included."
+        },
+        "2": {
+          "Title": "Uniheroes",
+          "Description": "Something."
+        },
+        "3": {
+          "Title": "Country Quiz",
+          "Description": "Quiz game of countries and cities."
+        },
+        "4": {
+          "Title": "To-Do App",
+          "Description": "Something."
+        }
+      },
+      "AboutMe": {
+        "p1": "Soy programador universitario, especializado en",
+        "p2": "JavaScript",
+        "p3": "Phyton, TypeScript, React,",
+        "p4": "entre otros. Tengo como objetivo desarrollar páginas web de alto impacto, originales e innovadoras",
+        "p5": ". En búsqueda de equipos de trabajo comprometidos y con metas afines",
+        "p6": ". Dispuesto a aprender y adaptarme a nuevas tecnologías, comunicarme asertivamente con los colaboradores de proyecto, y afrontar cambios de requisitos de manera eficaz."
+      },
+      "ContactMe": {
+        "Title": "Let's build something together!",
+        "p1": "Si tienes una pregunta o propuesta, no dudes en contactarme.",
+        "Name": "Full Name",
+        "NamePlaceholder": "Introduce tu nombre",
+        "Email": "Email",
+        "EmailPlaceholder": "your@email.com",
+        "Message": "Message",
+        "MessagePlaceholder": "Escribe tu mensaje aquí...",
+        "ButtonSend": "Send Message",
+        "Find": "Or find me on:"
+      }
+    }
+}
+

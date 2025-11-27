@@ -1,17 +1,20 @@
+import { useLang } from "../hooks/useLanguage"
+
 export function Header() {
+  const { t, lang } = useLang()
   return (
     <>
-      <header className="sticky top-0 flex flex-col lg:flex-row justify-center lg:max-w-[960px] max-w-[90%] m-auto pt-4 border-b border-bor-light rounded-xl backdrop-blur-xl z-50">
+      <header className="sticky top-0 flex flex-col lg:flex-row justify-center lg:max-w-[960px] max-w-[100%] m-auto pt-4 border-b border-bor-light dark:border-bor-dark backdrop-blur-xl z-50">
         <div className="flex justify-center">
           <nav className="flex gap-8 lg:mr-8 mb-2">
             <a className="text-sm lg:text-xl" href="">
-              Sobre Mi
+              {t(`${lang}.Header.AboutMe`)}
             </a>
             <a className="text-sm lg:text-xl" href="">
-              Proyectos
+            {t(`${lang}.Header.Projects`)}
             </a>
             <a className="text-sm lg:text-xl" href="">
-              Contacto
+            {t(`${lang}.Header.Contact`)}
             </a>
           </nav>
         </div>

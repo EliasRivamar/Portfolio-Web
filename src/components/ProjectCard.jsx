@@ -7,10 +7,10 @@ export function ProjectCard({title, description, techs}){
             ></div>
             <div className="flex flex-col gap-4 p-5 grow">
               <div className="grow">
-                <p className="text-gray-900 dark:text-white text-lg font-bold leading-normal">
+                <p className="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-normal">
                   {title}
                 </p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">
+                <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal mt-1">
                   {description}
                 </p>
               </div>

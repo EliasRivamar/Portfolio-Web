@@ -1,7 +1,7 @@
-import Translate '../assets/languages.svg?react'
+import Translate from '../assets/languages.svg?react'
 
-export function Translate () {
+export function TranslateIcon () {
   return(
-    <Translate 
+    <Translate className='stroke-text-primary-light dark:stroke-text-primary-dark' />
   )
 }

@@ -1,0 +1,54 @@
+{
+  "es":
+    {
+      "Header": {
+        "Projects": "Proyectos",
+        "AboutMe": "Sobre Mi",
+        "Contact": "Contactos"
+      },
+      "Title": "Desarrollador Full-Stack",
+      "ParrafInit1": "Estudiante en Ciencias de la Computacion y apasionado en el desarrollo web",
+      "ParrafInit2": ". Especiallizado en construir aplicaciones web modernas, resposivas, intuitivas y elegantes.",
+      "ButtonInit": "Ver mis proyectos",
+      "MyProjects": "Mis Proyectos",
+      "Projects": {
+        "1": {
+          "Title": "Sistema de Gestion de Inventario",
+          "Description": "Sistema web para administrar productos, precios y existencias. Con analíticas de ventas incluidas."
+        },
+        "2": {
+          "Title": "Uniheroes",
+          "Description": "Algo."
+        },
+        "3": {
+          "Title": "Country Quiz",
+          "Description": "Juego de adivinanzas de países y ciudades."
+        },
+        "4": {
+          "Title": "To-Do App",
+          "Description": "Algo."
+        }
+      },
+      "AboutMe": {
+        "p1": "Soy programador universitario, especializado en",
+        "p2": "JavaScript",
+        "p3": "Phyton, TypeScript, React,",
+        "p4": "entre otros. Tengo como objetivo desarrollar páginas web de alto impacto, originales e innovadoras",
+        "p5": ". En búsqueda de equipos de trabajo comprometidos y con metas afines",
+        "p6": ". Dispuesto a aprender y adaptarme a nuevas tecnologías, comunicarme asertivamente con los colaboradores de proyecto, y afrontar cambios de requisitos de manera eficaz."
+      },
+      "ConctactMe": {
+        "Title": "Construyamos algo juntos",
+        "p1": "Si tienes una pregunta o propuesta, no dudes en contactarme.",
+        "Name": "Nombre Completo",
+        "NamePlaceholder": "Introduce tu nombre",
+        "Email": "Correo Electrónico",
+        "EmailPlaceholder": "tu@correo.com",
+        "Message": "Tu Mensaje",
+        "MessagePlaceholder": "Escribe tu mensaje aquí...",
+        "buttonSend": "Enviar Mensaje",
+        "Find": "O encuentráme en:"
+      }
+    }
+}
+
