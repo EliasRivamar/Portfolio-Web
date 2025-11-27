@@ -9,6 +9,7 @@ export function CustomSelect({
 }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
+  console.log(open)
 
   const parsedOptions = options.map((opt) =>
     typeof opt === 'string' ? { label: opt, value: opt } : opt

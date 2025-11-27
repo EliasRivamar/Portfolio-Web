@@ -2,12 +2,14 @@
   "es":
     {
       "Header": {
+        "Home": "Inicio",
         "Projects": "Proyectos",
         "AboutMe": "Sobre Mi",
         "Contact": "Contactos"
       },
       "Title": "Desarrollador Full-Stack",
-      "ParrafInit1": "Estudiante en Ciencias de la Computacion y apasionado en el desarrollo web",
+      "ParrafInit0": "Estudiante en Ciencias de la Computacion",
+      "ParrafInit1": "y apasionado en el desarrollo web",
       "ParrafInit2": ". Especiallizado en construir aplicaciones web modernas, resposivas, intuitivas y elegantes.",
       "ButtonInit": "Ver mis proyectos",
       "MyProjects": "Mis Proyectos",
@@ -30,10 +32,11 @@
         }
       },
       "AboutMe": {
-        "p1": "Soy programador universitario, especializado en",
+        "Title": "Sobre Mi",
+        "p1": "Soy un estudiante, de 3er año, universitario en Ciencias de la Computacion, especializado en lenguajes como",
         "p2": "JavaScript",
         "p3": "Phyton, TypeScript, React,",
-        "p4": "entre otros. Tengo como objetivo desarrollar páginas web de alto impacto, originales e innovadoras",
+        "p4": "entre otros. Pero tengo una pasión por el desarrollo web, el cuál aprendí como autodidacta. Mi objetivo desarrollar páginas web de alto impacto, originales e innovadoras",
         "p5": ". En búsqueda de equipos de trabajo comprometidos y con metas afines",
         "p6": ". Dispuesto a aprender y adaptarme a nuevas tecnologías, comunicarme asertivamente con los colaboradores de proyecto, y afrontar cambios de requisitos de manera eficaz."
       },
@@ -48,7 +51,8 @@
         "MessagePlaceholder": "Escribe tu mensaje aquí...",
         "buttonSend": "Enviar Mensaje",
         "Find": "O encuentráme en:"
-      }
+      },
+      "Toast": "¡Gracias! Tu mensaje ha sido enviado. Te responderé lo antes posible."
     }
 }
 

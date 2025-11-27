@@ -1,63 +1,96 @@
-import { useLang } from "../hooks/useLanguage"
+import { useLang } from '../hooks/useLanguage'
+import { useToast } from '../hooks/useToast'
 
-
-export function ContactMe() {
+export function ContactMe({ id }) {
   const { t, lang } = useLang()
+  const { showToast } = useToast()
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const form = e.target
+    showToast(`${t(`${lang}.Toast`)}`, 'success')
+    await fetch("https://formsubmit.co/eliasrivamar11@gmail.com", {
+      method: "POST",
+      body: new FormData(form),
+    })
   
+    form.reset()
+  };
+
   return (
-    <div className="relative flex min-h-screen w-full flex-col items-center justify-center p-4">
+    <div
+      id={id}
+      className="relative flex min-h-screen w-full flex-col items-center justify-center p-4 scroll-mt-6"
+    >
       <div className="w-full max-w-2xl">
         <div className="flex flex-col gap-8 rounded-xl p-6 md:p-8">
           <div className="flex flex-col gap-3 text-center">
             <h1 className="text-text-primary-light dark:text-text-primary-dark text-4xl font-black leading-tight tracking-[-0.033em]">
-            {t(`${lang}.ContactMe.Title`)}
+              {t(`${lang}.ContactMe.Title`)}
             </h1>
             <p className="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
-            {t(`${lang}.ContactMe.p1`)}
+              {t(`${lang}.ContactMe.p1`)}
             </p>
           </div>
-          <form className="flex flex-col gap-6">
+          <form
+            className="flex flex-col gap-6"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="box" />
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <label className="flex flex-col gap-2">
                 <p className="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">
-                {t(`${lang}.ContactMe.Name`)}
+                  {t(`${lang}.ContactMe.Name`)}
                 </p>
                 <input
-                  className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-white placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 h-14"
+                  name="name"
+                  required
+                  className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 h-14"
                   placeholder={t(`${lang}.ContactMe.NamePlaceholder`)}
                   type="text"
-                  value=""
+                  
                 />
               </label>
               <label className="flex flex-col gap-2">
                 <p className="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">
-                {t(`${lang}.ContactMe.Email`)}
+                  {t(`${lang}.ContactMe.Email`)}
                 </p>
                 <input
-                  className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-white placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 h-14"
+                  name="email"
+                  required
+                  className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 h-14"
                   placeholder={t(`${lang}.ContactMe.EmailPlaceholder`)}
                   type="email"
-                  value=""
+                  
                 />
               </label>
             </div>
             <label className="flex flex-col gap-2">
               <p className="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">
-              {t(`${lang}.ContactMe.Message`)}
+                {t(`${lang}.ContactMe.Message`)}
               </p>
               <textarea
-                className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-white placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 min-h-36"
+                name="message"
+                required
+                className="form-input flex w-full flex-1 resize-none overflow-hidden rounded-xl border border-bor-light dark:border-bor-dark bg-white dark:bg-white/5 p-[15px] text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/40 min-h-36"
                 placeholder={t(`${lang}.ContactMe.MessagePlaceholder`)}
               ></textarea>
             </label>
-            <button className="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90">
-              <span className="truncate">{t(`${lang}.ContactMe.ButtonSend`)}</span>
+            <button type='submit' className="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90">
+              <span className="truncate">
+                {t(`${lang}.ContactMe.ButtonSend`)}
+              </span>
             </button>
           </form>
           <div className="flex flex-col items-center gap-4">
-            <p className="text-sm font-medium text-text-secondary-light text-text-secondary-dark">{t(`${lang}.ContactMe.Find`)}</p>
+            <p className="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+              {t(`${lang}.ContactMe.Find`)}
+            </p>
             <div className="flex items-center gap-6">
-              <a className="group" href="#">
+              <a className="group" href="https://www.linkedin.com/in/elias-rivamar-3a43b8269/"
+              target="_blank">
                 <svg
                   aria-hidden="true"
                   className="h-8 w-8 text-[#92a4c9] transition-colors group-hover:text-white"
@@ -71,7 +104,8 @@ export function ContactMe() {
                   ></path>
                 </svg>
               </a>
-              <a className="group" href="#">
+              <a className="group" href="https://github.com/EliasRivamar"
+              target="_blank">
                 <svg
                   aria-hidden="true"
                   className="h-8 w-8 text-[#92a4c9] transition-colors group-hover:text-white"
@@ -83,25 +117,6 @@ export function ContactMe() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden">
-        <div className="flex w-full max-w-sm flex-col items-center gap-6 rounded-xl bg-[#1e293b] p-8 text-center shadow-lg">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-500/20">
-            <span className="material-symbols-outlined text-4xl text-green-400">
-              check
-            </span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold text-white">¡Gracias!</h2>
-            <p className="text-base text-[#92a4c9]">
-              Tu mensaje ha sido enviado. Te responderé lo antes posible.
-            </p>
-          </div>
-          <button className="flex h-11 w-full items-center justify-center rounded-xl bg-primary px-5 text-base font-bold text-white transition-colors hover:bg-primary/90">
-            Cerrar
-          </button>
         </div>
       </div>
     </div>

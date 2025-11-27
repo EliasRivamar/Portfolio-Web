@@ -2,12 +2,14 @@
   "en":
     {
       "Header": {
+        "Home": "Home",
         "Projects": "Projects",
         "AboutMe": "About Me",
         "Contact": "Contacts"
       },
       "Title": "Full-Stack Developer",
-      "ParrafInit1": "Computer Science student and passionate about web development",
+      "ParrafInit0": "Computer Science student",
+      "ParrafInit1": " and passionate about web development",
       "ParrafInit2": ". Specialized in building modern, responsive, intuitive and elegant web applications.",
       "ButtonInit": "My Projects",
       "MyProjects": "My Projects",
@@ -30,25 +32,27 @@
         }
       },
       "AboutMe": {
-        "p1": "Soy programador universitario, especializado en",
+        "Title": "About Me",
+        "p1": "I am a 4rd year university student in Computer Science, specialized in languages such as",
         "p2": "JavaScript",
         "p3": "Phyton, TypeScript, React,",
-        "p4": "entre otros. Tengo como objetivo desarrollar páginas web de alto impacto, originales e innovadoras",
-        "p5": ". En búsqueda de equipos de trabajo comprometidos y con metas afines",
-        "p6": ". Dispuesto a aprender y adaptarme a nuevas tecnologías, comunicarme asertivamente con los colaboradores de proyecto, y afrontar cambios de requisitos de manera eficaz."
+        "p4": "among others. But I have a passion for web development, which I learned by myself. My goal is to develop high-impact, original and innovative websites",
+        "p5": ". In search of committed work teams with similar goals",
+        "p6": ". Willing to learn and adapt to new technologies, communicate assertively with project collaborators, and address changes in requirements effectively."
       },
       "ContactMe": {
         "Title": "Let's build something together!",
-        "p1": "Si tienes una pregunta o propuesta, no dudes en contactarme.",
+        "p1": "If you have a question or proposal, do not hesitate to contact me.",
         "Name": "Full Name",
-        "NamePlaceholder": "Introduce tu nombre",
+        "NamePlaceholder": "Enter your name",
         "Email": "Email",
         "EmailPlaceholder": "your@email.com",
         "Message": "Message",
-        "MessagePlaceholder": "Escribe tu mensaje aquí...",
+        "MessagePlaceholder": "Write your message here...",
         "ButtonSend": "Send Message",
         "Find": "Or find me on:"
-      }
+      },
+      "Toast": "Thanks! Your message has been sent. I will respond to you as soon as possible."
     }
 }
 
