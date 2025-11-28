@@ -30,7 +30,7 @@ export function Languages({ id }) {
             {t(`${lang}.Languages`)}
           </h2>
         </div>
-        <div className="flex gap-y-6 gap-x-4 m-auto flex-wrap w-[40%] justify-center">
+        <div className="flex gap-y-6 gap-x-4 m-auto flex-wrap lg:w-[40%] justify-center">
           <LangButton color={'cyan'} icon={<ReactIcon />} name={'React'} />
           <LangButton color={'bluePython'} icon={<PythonIcon />} name={'Python'} />
           <LangButton color={'violet'} icon={<CssIcon />} name={'CSS'} />
