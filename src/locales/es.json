@@ -16,7 +16,7 @@
       "Projects": {
         "1": {
           "Title": "Sistema de Gestion de Inventario",
-          "Description": "Sistema web para administrar productos, precios y existencias. Con analíticas de ventas incluidas."
+          "Description": "Sistema web para administrar productos, precios y existencias. Con analíticas de ventas incluidas. Solo para escritorio."
         },
         "2": {
           "Title": "Uniheroes",
@@ -27,8 +27,8 @@
           "Description": "Juego de adivinanzas de países y ciudades."
         },
         "4": {
-          "Title": "To-Do App",
-          "Description": "Algo."
+          "Title": "Weekly Planner",
+          "Description": "Una aplicación web de gestión de tareas sencilla e intuitiva."
         }
       },
       "AboutMe": {
@@ -52,7 +52,8 @@
         "buttonSend": "Enviar Mensaje",
         "Find": "O encuentráme en:"
       },
-      "Toast": "¡Gracias! Tu mensaje ha sido enviado. Te responderé lo antes posible."
+      "Toast": "¡Gracias! Tu mensaje ha sido enviado. Te responderé lo antes posible.",
+      "Languages": "Lenguajes y Tecnologías"
     }
 }
 

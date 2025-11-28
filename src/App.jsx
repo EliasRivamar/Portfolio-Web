@@ -3,6 +3,7 @@ import { AboutMe } from './components/AboutMe'
 import { ButtonMain } from './components/ButtonsMain'
 import { ContactMe } from './components/Contact'
 import { Header } from './components/Header'
+import { Languages } from './components/Languages'
 import { Main } from './components/Main'
 import { Projects } from './components/Projects'
 
@@ -14,6 +15,7 @@ function App() {
       <Main/>
       <Projects id="projects"/>
       <AboutMe id="about"/>
+      <Languages id='languages' />
       <ContactMe id="contact"/>
     </div>
   )

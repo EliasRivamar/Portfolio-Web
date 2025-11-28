@@ -16,7 +16,7 @@
       "Projects": {
         "1": {
           "Title": "Inventory Management System",
-          "Description": "Web system to manage products, prices and stocks. With sales analytics included."
+          "Description": "Web system to manage products, prices and stocks. With sales analytics included. Desktop Only."
         },
         "2": {
           "Title": "Uniheroes",
@@ -27,8 +27,8 @@
           "Description": "Quiz game of countries and cities."
         },
         "4": {
-          "Title": "To-Do App",
-          "Description": "Something."
+          "Title": "Weekly Planner",
+          "Description": "A simple and intuitive task management web application."
         }
       },
       "AboutMe": {
@@ -52,7 +52,8 @@
         "ButtonSend": "Send Message",
         "Find": "Or find me on:"
       },
-      "Toast": "Thanks! Your message has been sent. I'll respond you as soon as possible."
+      "Toast": "Thanks! Your message has been sent. I'll respond you as soon as possible.",
+      "Languages": "Languages and Technologies"
     }
 }
 

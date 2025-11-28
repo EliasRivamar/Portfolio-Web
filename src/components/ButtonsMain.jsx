@@ -8,7 +8,7 @@ export function ButtonMain({id}) {
   const { lang, setLang } = useLang()
   const { theme, setTheme } = useTheme()
   return (
-    <main id={id} className="pt-2 lg:-pt-4 h-5 lg:h-2 scroll-mt-24">
+    <main id={id} className="lg:hidden pt-2 lg:-pt-4 h-5 lg:h-2 scroll-mt-24">
       <header className='flex justify-between'>
         <div className="flex place-items-center justify-start pl-2">
           <div className="flex items-center gap-2 p-1 rounded-lg bg-background-light dark:bg-surface-dark border border-bor-light dark:border-bor-dark ">
