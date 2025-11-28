@@ -33,12 +33,12 @@
       },
       "AboutMe": {
         "Title": "About Me",
-        "p1": "I am a 4rd year university student in Computer Science, specialized in languages such as",
+        "p1": "I'm a 4th year Computer Science student with experience in languages and technologies like",
         "p2": "JavaScript",
         "p3": "Phyton, TypeScript, React,",
-        "p4": "among others. But I have a passion for web development, which I learned by myself. My goal is to develop high-impact, original and innovative websites",
-        "p5": ". In search of committed work teams with similar goals",
-        "p6": ". Willing to learn and adapt to new technologies, communicate assertively with project collaborators, and address changes in requirements effectively."
+        "p4": "NextJS, among others. But I have a strong passion for web development, which I learned by myself. My goal is to build high-impact, original and innovative websites",
+        "p5": ". In search of committed work teams with similar objectives",
+        "p6": ". I'm eager to learn and adapt to new technologies, communicate clearly and effectively with collaborators, and handle changing requirements with ease."
       },
       "ContactMe": {
         "Title": "Let's build something together!",
@@ -52,7 +52,7 @@
         "ButtonSend": "Send Message",
         "Find": "Or find me on:"
       },
-      "Toast": "Thanks! Your message has been sent. I will respond to you as soon as possible."
+      "Toast": "Thanks! Your message has been sent. I'll respond you as soon as possible."
     }
 }
 
