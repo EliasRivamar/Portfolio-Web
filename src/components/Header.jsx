@@ -58,7 +58,7 @@ export function Header() {
             </a>
           </nav>
         </div>
-          <div className="flex place-items-center justify-end gap-2 pr-2 -mt-2">
+          <div className="hidden lg:block place-items-center justify-end gap-2 pr-2 -mt-2">
             <div className=" flex w-15 place-items-center">
               <CustomSelect
                 value={lang === 'es' ? 'ES' : 'EN'}
