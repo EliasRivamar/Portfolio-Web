@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="h-screen w-screen overflow-y-auto  bg-background-light dark:bg-surface-dark text-text-primary-light dark:text-text-primary-dark scroll-smooth">
       <Header />
-      <ButtonMain id="home"/>
-      <Main/>
+      <ButtonMain id="home-mobile"/>
+      <Main id="home-desktop"/>
       <Projects id="projects"/>
       <AboutMe id="about"/>
       <Languages id='languages' />

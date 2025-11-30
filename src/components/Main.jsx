@@ -1,6 +1,6 @@
 import { useLang } from '../hooks/useLanguage'
 
-export function Main() {
+export function Main({id}) {
   const { t, lang } = useLang()
 
   function openEmail() {
@@ -12,7 +12,7 @@ export function Main() {
   }
 
   return (
-    <main className="grow pt-24 md:pt-32 pb-16">
+    <main id={id} className="grow pt-24 md:pt-32 pb-16">
       <div className="flex flex-col items-center text-center px-4">
         <div className="flex flex-col gap-3 max-w-3xl">
           <h1 className="text-slate-900 dark:text-white text-5xl md:text-7xl font-black leading-tight tracking-[-0.033em]">
