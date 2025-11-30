@@ -20,7 +20,7 @@
         },
         "2": {
           "Title": "Uniheroes",
-          "Description": "Algo."
+          "Description": "Uniheroes es una plataforma web donde puedes encontrar todas las películas, series y comics de tus superhéroes favoritos en un solo lugar. Inicio de sesión y registro eliminados para propósitos de demostración."
         },
         "3": {
           "Title": "Country Quiz",
@@ -49,7 +49,7 @@
         "EmailPlaceholder": "tu@correo.com",
         "Message": "Tu Mensaje",
         "MessagePlaceholder": "Escribe tu mensaje aquí...",
-        "buttonSend": "Enviar Mensaje",
+        "ButtonSend": "Enviar Mensaje",
         "Find": "O encuentráme en:"
       },
       "Toast": "¡Gracias! Tu mensaje ha sido enviado. Te responderé lo antes posible.",

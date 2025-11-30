@@ -25,7 +25,7 @@ export function Languages({ id }) {
       className="flex flex-1 justify-center py-5 sm:py-10 mt-6.5 scroll-mt-6"
     >
       <div className="layout-content-container flex w-full max-w-7xl flex-col px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between gap-4 p-4 items-center">
+        <div className="flex flex-wrap justify-between gap-4 p-4 items-center mb-4">
           <h2 className="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">
             {t(`${lang}.Languages`)}
           </h2>

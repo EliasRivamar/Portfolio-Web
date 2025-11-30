@@ -21,9 +21,9 @@ export function Projects({id}) {
 
           <ProjectCard title={t(`${lang}.Projects.1.Title`)} url={"https://shrimp-inventory-system.netlify.app/"} image={projectMan} description={t(`${lang}.Projects.1.Description`)} techs={['React', 'TypeScript', 'IndexedDB']}/>
 
-          <ProjectCard title={t(`${lang}.Projects.2.Title`)} url={"https://github.com/EliasRivamar"} image={projectUni} description={t(`${lang}.Projects.2.Description`)} techs={['Next.JS', 'TypeScript', 'React', 'Supabase', 'Motion']}/>
+          <ProjectCard title={t(`${lang}.Projects.2.Title`)} url={"https://uniheroes.vercel.app/"} image={projectUni} description={t(`${lang}.Projects.2.Description`)} techs={['Next.JS', 'TypeScript', 'React', 'Supabase', 'Motion']}/>
           
-          <ProjectCard title={t(`${lang}.Projects.3.Title`)} url={"https://github.com/EliasRivamar"} image={projectCountry} description={t(`${lang}.Projects.3.Description`)} techs={['JavaScript', 'React']}/>
+          <ProjectCard title={t(`${lang}.Projects.3.Title`)} url={"https://country-game-quiz.netlify.app/"} image={projectCountry} description={t(`${lang}.Projects.3.Description`)} techs={['JavaScript', 'React']}/>
           
           <ProjectCard title={t(`${lang}.Projects.4.Title`)} url={"https://weekly-planner-project.netlify.app/"} image={projectToDo} description={t(`${lang}.Projects.4.Description`)} techs={['JavaScript', 'React']}/>
           
