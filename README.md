@@ -3,6 +3,8 @@
 This is my personal portfolio website built with **React**, **Vite**, and **TailwindCSS**.  
 It showcases my projects, technical skills, work experience, and provides an easy way to contact me.
 
+Go and take a look: [My Portfolio](https://portfolio-eliasrivamar.netlify.app/)
+
 ## 🚀 Tech Stack
 
 - **React** — UI components  
